@@ -10,7 +10,7 @@ app.use(cookieParser());
 // Built-in Middleware adalah bawaan Express
 app.use(express.json());
 
-// Promise
+// Promisen atau routing
 app.get("/", (req, res) => {
   const name = req.cookies["name"];
   res.send(`Hello ${name}`);
